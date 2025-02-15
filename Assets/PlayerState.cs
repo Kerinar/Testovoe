@@ -4,5 +4,6 @@ using UnityEngine;
 
 public abstract class PlayerState
 {
+    public virtual void Enter(Player player) { }
     public virtual void Update(Player player) { }
 }

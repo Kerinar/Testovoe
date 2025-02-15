@@ -16,12 +16,13 @@ public class Player : MonoBehaviour
 
     public Vector3 _velocity = Vector3.zero;
 
-    private float _speed = 3f;
+    public float _speed = 3f;
 
 
     public void SwitchState(PlayerState state)
     {
         _currentState = state;
+        _currentState.Enter(this);
     }
 
     void Awake()
@@ -32,15 +33,19 @@ public class Player : MonoBehaviour
 
     void Start()
     {  
-        _currentState = _jumpState;
-
-        _animator.Play("Idle");
+        _currentState = _idleState;
+        _currentState.Enter(this);
     }
 
     void Update()
     {
+        if (!_characterController.isGrounded)
+        {
+            _velocity.y -= 0.1f;
+        }
+
         _currentState.Update(this);
 
-        _characterController.Move(_velocity * (_speed * Time.deltaTime));
+        _characterController.Move(_velocity * Time.deltaTime);
     }
 }

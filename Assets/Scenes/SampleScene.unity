@@ -142,6 +142,7 @@ MonoBehaviour:
   _characterController: {fileID: 0}
   _animator: {fileID: 0}
   _velocity: {x: 0, y: 0, z: 0}
+  _speed: 3
 --- !u!143 &567456161
 CharacterController:
   m_ObjectHideFlags: 0
@@ -608,9 +609,9 @@ Transform:
   m_GameObject: {fileID: 1220743260}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.77, y: 0.59, z: -0.21642683}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -9.49, y: 0.59, z: -0.21642683}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1036,7 +1037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d74c0af30341f24b905cde192fac5c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.19
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d74c0af30341f24b905cde192fac5c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1073,6 +1074,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1d74c0af30341f24b905cde192fac5c7, type: 3}
       propertyPath: m_Name
       value: Zombie1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 1d74c0af30341f24b905cde192fac5c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 1d74c0af30341f24b905cde192fac5c7, type: 3}
       propertyPath: m_Controller
@@ -1195,9 +1200,9 @@ Transform:
   m_GameObject: {fileID: 1964110396}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.8, y: 1.18, z: 0.69}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -9.5199995, y: 1.49, z: 1.17}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1300,9 +1305,9 @@ Transform:
   m_GameObject: {fileID: 2049245503}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.8, y: 1.89, z: 1.52}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -9.5199995, y: 2.43, z: 2.45}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
